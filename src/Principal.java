@@ -5,9 +5,9 @@ public class Principal {
         Scanner sc = new Scanner(System.in);
         boolean execution = true;
         
-        // o while e utilizado para mantar a caluladora aberta ate que o usuario passe o valor false para a variavel execution, passando o valor 0 no menu inicial de opcoes da calculadora. 
+        // o while e utilizado para mantar a caluladora aberta ate que a variavel execution receba o valor false, que sera definido quando o usuario optar pela opcao 0 no menu inicial de opcoes da calculadora. 
         while (execution) {
-          System.out.println("\nDigite a opção desejada:\n0 - Sair do programa\n1 - Calculadora básica\n2 - Calculadora de raízes");
+          System.out.println("\nCALCULADORA\n\n     [MENU INCIAL]\nDigite a opção desejada:\n0 - Sair do programa\n1 - Calculadora básica\n2 - Calculadora de raízes");
           int option = sc.nextInt();
           
           /* A partir da funcao switch determina-se tres possibilidades de funcionamento do programa, alem de uma ultima posssibilidade 
@@ -87,3 +87,5 @@ public class Principal {
         }
       }
 }
+
+
