@@ -56,7 +56,7 @@ public class Principal {
                   result = calc.modulo();
                   break;
                 default:
-                  System.out.println("Opção inválida!");
+                  System.out.println("Opção inválida!\n");
                   break;
               }
     
@@ -81,7 +81,7 @@ public class Principal {
               }
               break;
             default:
-              System.out.println("Opção inválida!");
+              System.out.println("Opção inválida!\n");
               break;
           }
         }
