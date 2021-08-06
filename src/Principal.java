@@ -20,10 +20,10 @@ public class Principal {
               // Nesta segunda possibilidade inicia-se a calculadora basica
             case 1:
               System.out.print("Digite o primeiro valor: ");
-              float num1 = sc.nextFloat();
+              double num1 = sc.nextDouble();
     
               System.out.print("Digite o segundo valor: ");
-              float num2 = sc.nextFloat();
+              double num2 = sc.nextDouble();
     
               System.out.println("Digite a operação desejada: ");
               System.out.println("1 - Soma");
@@ -36,7 +36,7 @@ public class Principal {
     
               Calculadora calc = new Calculadora(num1, num2);
     
-              float result = 0;
+              double result = 0;
 
               /* Nesta funcao switch, dentro da calculadora basica, 5 opcoes sao possiveis para usuario. Dependendo da entrada do usuario, uma funcao da classe calculadora e chamada para realizar uma opercao: soma, subtracao, multiplicacao, divisao ou resto da divisao. Alem de uma ultimo caso, em que uma opcao invalida e passada. */ 
               switch (option2) {
@@ -67,11 +67,11 @@ public class Principal {
               do segundo grau para a obtencao das raizes. */
             case 2:
               System.out.print("Digite o valor de a: ");
-              float a = sc.nextFloat();
+              double a = sc.nextDouble();
               System.out.print("Digite o valor de b: ");
-              float b = sc.nextFloat();
+              double b = sc.nextDouble();
               System.out.print("Digite o valor de c: ");
-              float c = sc.nextFloat();
+              double c = sc.nextDouble();
     
               Calculadora calculadora = new Calculadora(a, b, c);
               double[] raizes = calculadora.calculaRaizes();
