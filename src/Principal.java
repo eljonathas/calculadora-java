@@ -7,7 +7,7 @@ public class Principal {
         
         // o while e utilizado para mantar a caluladora aberta ate que a variavel execution receba o valor false, que sera definido quando o usuario optar pela opcao 0 no menu inicial de opcoes da calculadora. 
         while (execution) {
-          System.out.println("\nCALCULADORA\n\n     [MENU INCIAL]\nDigite a opção desejada:\n0 - Sair do programa\n1 - Calculadora básica\n2 - Calculadora de raízes");
+          System.out.print("\nCALCULADORA\n\n     [MENU INICIAL]\n0 - Sair do programa\n1 - Calculadora básica\n2 - Calculadora de raízes \n\nDigite a opção desejada:");
           int option = sc.nextInt();
           
           /* A partir da funcao switch determina-se tres possibilidades de funcionamento do programa, alem de uma ultima posssibilidade 
@@ -25,13 +25,13 @@ public class Principal {
               System.out.print("Digite o segundo valor: ");
               double num2 = sc.nextDouble();
     
-              System.out.println("Digite a operação desejada: ");
+              
               System.out.println("1 - Soma");
               System.out.println("2 - Subtração");
               System.out.println("3 - Multiplicação");
               System.out.println("4 - Divisão");
               System.out.println("5 - Modulo");
-    
+              System.out.print("\nDigite a operação desejada: ");
               int option2 = sc.nextInt();
     
               Calculadora calc = new Calculadora(num1, num2);
