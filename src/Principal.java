@@ -7,7 +7,7 @@ public class Principal {
         
         // o while e utilizado para mantar a caluladora aberta ate que a variavel execution receba o valor false, que sera definido quando o usuario optar pela opcao 0 no menu inicial de opcoes da calculadora. 
         while (execution) {
-          System.out.println("\nCALCULADORA\n\n     [MENU INCIAL]\nDigite a opção desejada:\n0 - Sair do programa\n1 - Calculadora básica\n2 - Calculadora de raízes");
+          System.out.print("\nCALCULADORA\n\n     [MENU INCIAL]\n0 - Sair do programa\n1 - Calculadora básica\n2 - Calculadora de raízes \n\nDigite a opção desejada:");
           int option = sc.nextInt();
           
           /* A partir da funcao switch determina-se tres possibilidades de funcionamento do programa, alem de uma ultima posssibilidade 
@@ -19,19 +19,19 @@ public class Principal {
               break;
               // Nesta segunda possibilidade inicia-se a calculadora basica
             case 1:
-              System.out.print("Digite o primeiro valor: ");
+              System.out.print("\nDigite o primeiro valor: ");
               float num1 = sc.nextFloat();
     
               System.out.print("Digite o segundo valor: ");
               float num2 = sc.nextFloat();
     
-              System.out.println("Digite a operação desejada: ");
+              
               System.out.println("1 - Soma");
               System.out.println("2 - Subtração");
               System.out.println("3 - Multiplicação");
               System.out.println("4 - Divisão");
               System.out.println("5 - Modulo");
-    
+              System.out.print("\nDigite a operação desejada: ");
               int option2 = sc.nextInt();
     
               Calculadora calc = new Calculadora(num1, num2);
@@ -66,13 +66,13 @@ public class Principal {
               /* Nesta terceira possibilidade inicia-se a calculadora de raizes, na qual o usuario deve passar os tres coeficientes da equacao
               do segundo grau para a obtencao das raizes. */
             case 2:
-              System.out.print("Digite o valor de a: ");
+              System.out.print("\nDigite o valor de a: ");
               float a = sc.nextFloat();
               System.out.print("Digite o valor de b: ");
               float b = sc.nextFloat();
               System.out.print("Digite o valor de c: ");
               float c = sc.nextFloat();
-    
+  
               Calculadora calculadora = new Calculadora(a, b, c);
               double[] raizes = calculadora.calculaRaizes();
     
