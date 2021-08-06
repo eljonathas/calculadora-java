@@ -1,42 +1,81 @@
 
+/**
+ * Classe que contém os métodos de aplicação da calculadora.
+ * @author Henrique Silva
+ * @author Jonathas Andrade
+ * @author Caio André
+ */
 public class Calculadora {
   private float a, b, c;
   private float num1, num2;
-
-  /* Construiu-se dois contrututores para a classe Calculadora, em que um recebe tres floats como parametro para 
-  a calculadora de raízes, sendo os coeficientes da equacao, e o outro recebe apenas dois floats para a calculadora basica*/
   
+  /**
+   * Primeiro construtor da classe Calculadora que recebe os parâmetros para o cálculo das raízes reais.
+   * @param a primeiro valor do tipo float
+   * @param b segundo valor do tipo float
+   * @param c terceiro valor do tipo float
+   */
   public Calculadora(float a, float b, float c) {
     this.a = a;
     this.b = b;
     this.c = c;
   }
+
+  /**
+   * Segundo construtor da classe Calculadora que recebe os parâmetros para o cálculo das operações escolhidas pelo usuário.
+   * @param num1 recebe o primeiro valor da operação
+   * @param num2 recebe o segundo valor da operação
+   */
   
   public Calculadora(float num1, float num2){
     this.num1 = num1;
     this.num2 = num2;
   }
-  
+
+  /**
+   * Realiza a soma dos valores armazenados nos atributos da classe Calculadora.
+   * @return o resultado da operação de soma
+   */
   public float soma(){
     return num1 + num2;
   }
-  
+
+  /**
+   * Realiza a divisão dos valores armazenados nos atributos da classe Calculadora.
+   * @return o resultado da operação de divisão
+   */
   public float divisao(){
     return num1 / num2;
   }
   
+  /**
+   * Realiza a multiplicação dos valores armazenados nos atributos da classe Calculadora.
+   * @return o resultado da operação de multiplicação
+   */
   public float multiplicacao(){
     return num1 * num2;
   }
   
+  /**
+   * Realiza a subtração dos valores armazenados nos atributos da classe Calculadora.
+   * @return o resultado da operação de subtração
+   */
   public float subtracao(){
     return num1 - num2;
   }
-  
+
+  /**
+   * Realiza o resto da divisão entre os valores armazenados nos atributos da classe Calculadora.
+   * @return o resultado da operação de resto da divisão
+   */
   public float modulo(){
     return num1 % num2;
   }
-  
+
+  /**
+   * Realiza o cálculo das raízes reais entre os valores armazenados nos atributos da classe Calculadora.
+   * @return as duas raízes reais resultantes da operação
+   */
   public double[] calculaRaizes(){
     float delta = (b * b) - 4 * a * c;
 
@@ -59,6 +98,4 @@ public class Calculadora {
     // a funcao retorna o array com as duas raizes da equaçao.
     return new double[]{x1, x2};
   }
-  
- 
 }
