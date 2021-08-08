@@ -82,20 +82,20 @@ public class Calculadora {
     double x1 = (-b + Math.sqrt(delta)) / (2 * a);
     double x2 = (-b - Math.sqrt(delta)) / (2 * a);
 
-    // Analisa o delta da equacao. Caso seja menor do que 0, nao havera raizes reais. 
+    // Analisa o delta da equação. Caso seja menor do que 0, não haverá raizes reais.
     if(delta < 0){
       System.out.println("Não há raízes reais");
 
       return null;
     }else 
-    // Analisa o delta da equacao. Caso seja igual a 0, havera apenas uma raiz real. 
+    // Analisa o delta da equação. Caso seja igual a 0, haverá apenas uma raiz real.
     if (delta == 0){
       System.out.println("\nHá uma raiz real: " + x1);
 
       return null;
     }
     
-    // a funcao retorna o array com as duas raizes da equaçao.
+    // A funcao retorna o array com as duas raizes da equaçao.
     return new double[]{x1, x2};
   }
 }
